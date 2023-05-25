@@ -18,9 +18,9 @@ def array_variants(arr):
                 x = arr[index]
                 arr[index] = 0
                 
-            yield arr[:]  # yield генерирует каждый вариант по очереди
+            yield array[:]  # yield генерирует каждый вариант по очереди
             for index in combination:
-                arr[index] = x  # возвращаем массив к исходному состоянию
+                array[index] = x  # возвращаем массив к исходному состоянию
 
 # Получаем все возможные варианты
 variants = array_variants(array)
