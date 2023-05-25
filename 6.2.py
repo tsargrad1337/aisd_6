@@ -4,7 +4,7 @@
 import itertools
 import copy
 from random import randint
-n = 5
+n = 10
 array = [0]*n
 for i in range(n):
     array[i] = randint(-10, 10)
